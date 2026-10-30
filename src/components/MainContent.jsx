@@ -10,6 +10,13 @@ import Divider from '@mui/material/Divider'
 import axios from 'axios'
 import moment from 'moment'
 
+//IMPORT IMAGES FROM ASSETS
+import fajrImage from '../assets/fajr.png';
+import dhuhrImage from '../assets/dhuhr.png';
+import asrImage from '../assets/asr.png';
+import maghribImage from '../assets/maghrib.png';
+import ishaImage from '../assets/isha.png';
+
 const arabicWeekdays = ['الأحد', 'الاثنين', 'الثلاثاء', 'الأربعاء', 'الخميس', 'الجمعة', 'السبت'];
 const arabicMonths = ['كانون الثاني', 'شباط', 'آذار', 'نيسان', 'أيار', 'حزيران', 'تموز', 'آب', 'أيلول', 'تشرين الأول', 'تشرين الثاني', 'كانون الأول'];
 
@@ -124,11 +131,11 @@ export default function MainContent() {
 
             {/* START BUILD PRAYER TIMES */}
             <Box className="prayer-grid">
-                <Prayer prayerName="الفجر" prayerTime={timings.Fajr} prayerImage="/src/assets/fajr.png" />
-                <Prayer prayerName="الظهر" prayerTime={timings.Dhuhr} prayerImage="/src/assets/dhuhr.png" />
-                <Prayer prayerName="العصر" prayerTime={timings.Asr} prayerImage="/src/assets/asr.png" />
-                <Prayer prayerName="المغرب" prayerTime={timings.Sunset} prayerImage="/src/assets/maghrib.png" />
-                <Prayer prayerName="العشاء" prayerTime={timings.Isha} prayerImage="/src/assets/isha.png" />
+                <Prayer prayerName="الفجر" prayerTime={timings.Fajr} prayerImage={fajrImage} />
+                <Prayer prayerName="الظهر" prayerTime={timings.Dhuhr} prayerImage={dhuhrImage} />
+                <Prayer prayerName="العصر" prayerTime={timings.Asr} prayerImage={asrImage} />
+                <Prayer prayerName="المغرب" prayerTime={timings.Sunset} prayerImage={maghribImage} />
+                <Prayer prayerName="العشاء" prayerTime={timings.Isha} prayerImage={ishaImage} />
             </Box>
             {/* END BUILD PRAYER TIMES */}
 
