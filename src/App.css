@@ -1,0 +1,139 @@
+/* CUSTOM FONTS */
+@font-face {
+  font-family: "IBM";
+  src: url("/font/IBM/IBMPlexSansArabic-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "IBM";
+  src: url("/font/IBM/IBMPlexSansArabic-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "IBM";
+  src: url("/font/IBM/IBMPlexSansArabic-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "IBM";
+  src: url("/font/IBM/IBMPlexSansArabic-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "IBM";
+  src: url("/font/IBM/IBMPlexSansArabic-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "IBM";
+  src: url("/font/IBM/IBMPlexSansArabic-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "IBM";
+  src: url("/font/IBM/IBMPlexSansArabic-Thin.ttf") format("truetype");
+  font-weight: 100;
+}
+
+.app-shell {
+  margin-inline: auto;
+}
+
+.main-content {
+  width: 100%;
+  min-width: 0;
+}
+
+.prayer-summary {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1rem, 3vw, 2rem);
+  padding: clamp(0.5rem, 1.5vw, 1rem);
+}
+
+.summary-item {
+  min-width: 0;
+  color: #fff;
+}
+
+.summary-date,
+.summary-label {
+  margin-bottom: 0.625rem;
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.summary-city,
+.summary-countdown {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+}
+
+.summary-countdown {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.25em;
+  font-variant-numeric: tabular-nums;
+  direction: rtl;
+  white-space: nowrap;
+}
+
+.countdown-part {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25em;
+  direction: ltr;
+}
+
+.countdown-separator {
+  direction: ltr;
+}
+
+.prayer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr));
+  gap: clamp(0.75rem, 1.5vw, 1.25rem);
+  width: 100%;
+  align-items: stretch;
+}
+
+.prayer-grid > * {
+  min-width: 0;
+}
+
+.city-select-row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: clamp(1rem, 2.5vw, 1.5rem);
+}
+
+@media (max-width: 480px) {
+  .prayer-summary {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+  }
+
+  .summary-label,
+  .summary-date {
+    margin-bottom: 0.375rem;
+  }
+
+  .prayer-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 3px;
+}
