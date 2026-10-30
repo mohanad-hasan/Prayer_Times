@@ -77,7 +77,7 @@ npm run preview
 
 ## 🌐 Live Demo
 
-**Live Website:** [View Prayer Times]([YOUR_DEPLOYED_WEBSITE_URL](https://prayertimes-brown.vercel.app/))
+**Live Website:** https://prayertimes-brown.vercel.app/
 
 
 ## 🔮 Future Improvements
