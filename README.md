@@ -1,16 +1,100 @@
-# React + Vite
+# 🕌 Prayer Times | مواقيت الصلاة
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A modern and responsive Islamic prayer times website built with **React, Vite, and Material UI**. The application displays the five daily prayers in an elegant interface with custom prayer illustrations, a live countdown to the next prayer, and city selection.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- 🕌 **Five Daily Prayers:** Display Fajr, Dhuhr, Asr, Maghrib, and Isha prayer times.
+- ⏳ **Next Prayer Countdown:** Show the remaining time until the next prayer.
+- 🌍 **City Selection:** Select a city to view its prayer times.
+- 🎨 **Modern UI:** Elegant dark gradient background with a black and blue-gray color palette.
+- 🖼️ **Custom Visuals:** Dedicated imagery for each prayer.
+- 📱 **Responsive Design:** Adapt the layout to mobile phones, tablets, laptops, and desktop screens.
+- 🌙 **Arabic Interface:** Arabic prayer names and a clean, readable layout.
 
-## React Compiler
+## 🛠️ Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- JavaScript (ES6+)
+- Material UI (MUI)
+- CSS3
+- Git & GitHub
 
-## Expanding the Oxlint configuration
+## 🚀 Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+Follow these steps to run the project locally.
+
+### Prerequisites
+
+Make sure you have installed:
+
+- [Node.js](https://nodejs.org/)
+- npm (included with Node.js)
+- [Git](https://git-scm.com/)
+
+### Installation
+
+**1. Clone the repository**
+
+```bash
+git clone https://github.com/mohanad-hasan/Prayer_Times.git
+```
+
+**2. Navigate to the project directory**
+
+```bash
+cd Prayer_Times
+```
+
+**3. Install dependencies**
+
+```bash
+npm install
+```
+
+**4. Start the development server**
+
+```bash
+npm run dev
+```
+
+Open the local URL displayed in your terminal to view the application.
+
+## 🏗️ Build for Production
+
+To create an optimized production build, run:
+
+```bash
+npm run build
+```
+
+To preview the production build locally:
+
+```bash
+npm run preview
+```
+
+## 🌐 Live Demo
+
+**Live Website:** [View Prayer Times](YOUR_DEPLOYED_WEBSITE_URL)
+
+
+## 🔮 Future Improvements
+
+- Automatically detect the user's location with permission.
+- Add a Hijri calendar.
+- Add notifications for upcoming prayers.
+- Improve accessibility and multilingual support.
+
+## 👨‍💻 Author
+
+**Mohanad Hasan**
+
+Frontend Developer | React Developer
+
+- GitHub: [mohanad-hasan](https://github.com/mohanad-hasan)
+
+## 📄 License
+
+This project is open-source and available for learning and personal use. Add a license file if you wish to distribute it under a specific open-source license.
